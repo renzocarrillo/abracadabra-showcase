@@ -78,9 +78,12 @@ There is no public demo. Add screenshots here for reviewers:
 
 Then reference them below:
 
-![Dashboard](docs/screenshots/dashboard.png)
-![Bins](docs/screenshots/bins.png)
-![Orders](docs/screenshots/orders.png)
+![Bins](docs/screenshots/Bins.png)
+![Dashboard](docs/screenshots/Dashboard1.png)
+![Dashboard 2](docs/screenshots/Dashboard2.png)
+![Orders](docs/screenshots/Orders.png)
+![Picking libre](docs/screenshots/Picking_libre.png)
+![Recepciones](docs/screenshots/Recepciones.png)
 
 ---
 
