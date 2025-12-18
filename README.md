@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# Abracadabra — Stock & Picking Monitoring
 
-## Project info
+Abracadabra is a web app to monitor inventory/picking status across stores/warehouses and reduce operational errors.
 
-**URL**: https://lovable.dev/projects/1a4e5408-2926-48ef-917c-c41f1b20d434
+**Demo:** <https://abracadabra.pelodeoso.com.pe/>  
+**Screenshots:** see `/docs/screenshots`
 
-## How can I edit this code?
+## Problem
+- <What operational problem you faced>
+- <Why existing tools were not enough>
+- <What you improved (speed, errors, visibility)>
 
-There are several ways of editing your application.
+## Key features
+- Inventory visibility by store/warehouse
+- Picking monitoring and status tracking
+- <Alerts / dashboards / exports> (add what applies)
+- <Integrations> (e.g., Bsale / Supabase)
 
-**Use Lovable**
+## Tech stack
+- Frontend: Vite + React + TypeScript + Tailwind + shadcn/ui
+- Backend/DB: Supabase (Postgres, SQL, migrations) *(if accurate)*
+- Package manager: Bun
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a4e5408-2926-48ef-917c-c41f1b20d434) and start prompting.
+## Architecture (high level)
+UI (React) → API/Edge functions → Postgres (Supabase) → Integrations
 
-Changes made via Lovable will be committed automatically to this repo.
+## Run locally
+### Requirements
+- Bun (recommended) or Node.js
 
-**Use your preferred IDE**
+### Setup
+git clone https://github.com/renzocarrillo/abracadabra-showcase.git
+cd abracadabra-showcase
+cp .env.example .env
+# fill required variables
+bun install
+bun run dev
+Environment variables
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Document the required vars here (no secrets in the repo):
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<VITE_SUPABASE_URL>
 
-Follow these steps:
+<VITE_SUPABASE_ANON_KEY>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<etc>
+License
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1a4e5408-2926-48ef-917c-c41f1b20d434) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<MIT / All rights reserved>
