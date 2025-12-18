@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Main app colors - neutral and professional */
+    --background: 0 0% 98%;
+    --foreground: 220 9% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 9% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 9% 15%;
+
+    /* Primary colors - professional dark */
+    --primary: 220 9% 15%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary - light grey tones */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 15%;
+
+    /* Muted tones for subtle elements */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent - slightly different grey */
+    --accent: 220 14% 93%;
+    --accent-foreground: 220 9% 15%;
+
+    /* System colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 0 0% 100%;
+    --ring: 220 9% 15%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors - matching the design */
+    --sidebar-background: 220 14% 96%;
+    --sidebar-foreground: 220 9% 15%;
+    --sidebar-primary: 220 9% 15%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 14% 93%;
+    --sidebar-accent-foreground: 220 9% 15%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 220 9% 15%;
+
+    /* Custom warehouse app colors */
+    --stats-bg: 0 0% 100%;
+    --stats-border: 220 13% 91%;
+    --table-header: 220 14% 93%;
+    --table-row: 0 0% 100%;
+    --table-hover: 220 14% 98%;
+    
+    /* Order status colors */
+    --status-not-prepared: 45 96% 89%;
+    --status-not-prepared-foreground: 25 95% 39%;
+    --status-prepared: 142 76% 90%;
+    --status-prepared-foreground: 142 84% 24%;
+  }
+
+  .dark {
+    --background: 220 9% 9%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 9% 9%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 9% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 220 9% 15%;
+
+    --secondary: 220 9% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 9% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 220 9% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 220 9% 15%;
+    --input: 220 9% 15%;
+    --ring: 0 0% 95%;
+
+    --sidebar-background: 220 9% 6%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 220 9% 15%;
+    --sidebar-accent: 220 9% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 9% 15%;
+    --sidebar-ring: 0 0% 95%;
+
+    --stats-bg: 220 9% 9%;
+    --stats-border: 220 9% 15%;
+    --table-header: 220 9% 12%;
+    --table-row: 220 9% 9%;
+    --table-hover: 220 9% 15%;
+    
+    /* Order status colors - dark mode */
+    --status-not-prepared: 45 93% 15%;
+    --status-not-prepared-foreground: 45 96% 89%;
+    --status-prepared: 142 84% 15%;
+    --status-prepared-foreground: 142 76% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

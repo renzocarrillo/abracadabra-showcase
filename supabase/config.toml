@@ -1,0 +1,112 @@
+project_id = "cflyvlkpbodtutyikfbk"
+
+# Shopify integration
+[functions.sync-product-to-shopify]
+verify_jwt = false
+
+[functions.sync-all-products-to-shopify]
+verify_jwt = false
+
+[functions.get-shopify-product-images]
+verify_jwt = true
+
+[functions.sync-shopify-images]
+verify_jwt = false
+
+# Report generation functions
+[functions.generate-inventory-report]
+verify_jwt = true
+
+# Automated snapshots
+[functions.daily-stock-snapshot]
+verify_jwt = false
+
+# Specialized document emission functions
+[functions.emit-boleta]
+verify_jwt = true
+
+[functions.emit-factura]
+verify_jwt = true
+
+[functions.emit-boleta-with-guide]
+verify_jwt = true
+
+[functions.emit-factura-with-guide]
+verify_jwt = true
+
+# Ticket emission functions
+[functions.emit-ticket-natural]
+verify_jwt = true
+
+[functions.emit-ticket-empresa]
+verify_jwt = true
+
+[functions.emit-guide-remision]
+verify_jwt = true
+
+[functions.create-remission-guide]
+verify_jwt = true
+
+[functions.create-invoice-remission-guide]
+verify_jwt = true
+
+# Other functions
+[functions.setup-shopify-webhook]
+verify_jwt = false
+
+[functions.shopify-webhook]
+verify_jwt = false
+
+[functions.stock-system-reset]
+verify_jwt = true
+
+[functions.create-stock-consumption]
+verify_jwt = true
+
+[functions.create-stock-reception]
+verify_jwt = true
+
+[functions.create-internal-transfer]
+verify_jwt = true
+
+[functions.create-external-transfer]
+verify_jwt = true
+
+[functions.create-free-picking-transfer]
+verify_jwt = true
+
+[functions.create-free-picking-remission-guide]
+verify_jwt = true
+
+[functions.recover-failed-free-picking]
+verify_jwt = true
+
+[functions.restore-picking-stock]
+verify_jwt = true
+
+[functions.cleanup-all-picking-libre]
+verify_jwt = true
+
+[functions.test-bsale-connection]
+verify_jwt = true
+
+[functions.get-document-details]
+verify_jwt = true
+
+[functions.update-detail-ids]
+verify_jwt = true
+
+[functions.create-user]
+verify_jwt = true
+
+[functions.create-order-atomic]
+verify_jwt = true
+
+[functions.delete-user]
+verify_jwt = true
+
+[functions.update-password]
+verify_jwt = true
+
+[functions.manual-complete-sale]
+verify_jwt = true

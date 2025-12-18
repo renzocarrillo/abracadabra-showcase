@@ -1,0 +1,1 @@
+UPDATE ventas SET estado = 'archivado' WHERE venta_id = 'V1009';
