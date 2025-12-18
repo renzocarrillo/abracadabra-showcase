@@ -6,7 +6,7 @@
  * open on different devices.
  */
 
-const STORAGE_KEY = 'lovable_device_id';
+const STORAGE_KEY = 'device_id';
 
 /**
  * Generates a unique device ID using timestamp + random UUID fragment
